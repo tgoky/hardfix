@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+/* Ensure the body and html take up full height and have no margin */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background: #11421a;
+  background-size: cover; /* Ensure the background covers the entire viewport */
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box; /* Ensure padding is included in height and width */
+  margin-top: 60px; 
+
+}
+
+.menu-bar {
+  position: fixed; /* Fixes the menu bar to the top of the viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space items across the container */
+  padding: 10px 20px;
+  background: #11421a;
+  border-bottom: 2px solid #ddd;
+  z-index: 1000; /* Ensure the menu bar stays on top of other elements */
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.menu-bar h1 {
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Outfit', cursive; 
+  color: #e5eaee;
+  flex-grow: 1; /* Allow the title to grow and take up available space */
+}
+
+.enter-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  padding-left: -10px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.icon span {
+  font-size: 54px; /* Adjust size as needed */
+  color: #fff; /* Ensure contrast with background */
+  margin-left: -90px;
+  margin-top: -60px;
+  cursor: pointer; /* Indicate clickable */
+}
+
+
+.description {
+  max-width: 800px;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  font-family: 'Outfit', cursive; 
+  color: #fff; /* Text color to contrast with the dark background */
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.ebutton {
+
+  margin-left: 20px; /* Remove negative margin */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+
+  border-radius: 15px;
+  padding: 10px 30px;
+}
+
+
+.footer {
+  background: #344f39;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Outfit', cursive; 
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
